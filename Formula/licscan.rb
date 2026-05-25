@@ -2,19 +2,19 @@ class Licscan < Formula
   desc "Open-source license & compliance scanner for modern codebases"
   homepage "https://github.com/codelake-dev/licscan"
   license "Apache-2.0"
-  version "0.11.0"
+  version "0.11.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/codelake-dev/licscan/releases/download/v0.11.0/licscan-darwin-arm64"
-      sha256 "5f720665677482691e7f299754e0f78e4591cec7931f56230fe7bebf6700d884"
+      url "https://github.com/codelake-dev/licscan/releases/download/v0.11.1/licscan-darwin-arm64"
+      sha256 "a3d13ecd46dae40547bebb4e57c7c184d7b0a3b9c68c7b20604610e64fe66ff7"
 
       def install
         bin.install "licscan-darwin-arm64" => "licscan"
       end
     else
-      url "https://github.com/codelake-dev/licscan/releases/download/v0.11.0/licscan-darwin-amd64"
-      sha256 "0cca9c652c38ab02cc6123c4b5f3a11868e311c702a0f9f2c4734cb17890ee34"
+      url "https://github.com/codelake-dev/licscan/releases/download/v0.11.1/licscan-darwin-amd64"
+      sha256 "cc172e3e104f760721e2e6e55570a83771f1134ef94c5a52900f906514a42163"
 
       def install
         bin.install "licscan-darwin-amd64" => "licscan"
@@ -24,15 +24,15 @@ class Licscan < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/codelake-dev/licscan/releases/download/v0.11.0/licscan-linux-arm64"
-      sha256 "20678838da46bb15c0965a42bfeffb82c5084d3bc918ea8376461174007c0471"
+      url "https://github.com/codelake-dev/licscan/releases/download/v0.11.1/licscan-linux-arm64"
+      sha256 "8f5d106d61b6f6e50b1a9d6ad188b8535dfe3f49be65f61dc2deb177160858aa"
 
       def install
         bin.install "licscan-linux-arm64" => "licscan"
       end
     else
-      url "https://github.com/codelake-dev/licscan/releases/download/v0.11.0/licscan-linux-amd64"
-      sha256 "4b0be0d108249a42b04888cbcd535e528a4a63f12cc438bb36c74f3ad8fc22b3"
+      url "https://github.com/codelake-dev/licscan/releases/download/v0.11.1/licscan-linux-amd64"
+      sha256 "44932ec0f34c70aa9e823b078e820955e9eb87caa9efa016ee50b24c5b94bcbd"
 
       def install
         bin.install "licscan-linux-amd64" => "licscan"
